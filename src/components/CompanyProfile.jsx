@@ -16,7 +16,7 @@ export default function TeamMembers() {
       id: 1,
       name: 'Michael Reynolds',
       title: 'Chief Executive Officer & Founder',
-      image: '/api/placeholder/500/500',
+      image: '/ohzi.jpg',
       bio: 'With over 20 years of experience in sports facility development, Michael has overseen the construction of more than 50 professional stadiums worldwide. His vision for innovative, sustainable sporting venues has transformed how athletes perform and fans experience the game.',
       expertise: [
         'Stadium Design',
@@ -130,7 +130,10 @@ export default function TeamMembers() {
   const isFounder = selectedMember === 0;
 
   return (
-    <section className='py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-gray-50 to-green-50 overflow-hidden' id='team'>
+    <section
+      className='py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-gray-50 to-green-50 overflow-hidden'
+      id='team'
+    >
       <div className='max-w-7xl mx-auto'>
         {/* Section Header */}
         <div className='text-center mb-16'>
@@ -172,20 +175,7 @@ export default function TeamMembers() {
                       {selectedMember + 1} of {teamMembers.length}
                     </span>
                   </div>
-                  <div className='flex space-x-2'>
-                    <button
-                      onClick={prevMember}
-                      className='p-2 rounded-full bg-white/20 hover:bg-white/30 text-white backdrop-blur-sm transition-colors'
-                    >
-                      <ChevronLeft className='w-5 h-5' />
-                    </button>
-                    <button
-                      onClick={nextMember}
-                      className='p-2 rounded-full bg-white/20 hover:bg-white/30 text-white backdrop-blur-sm transition-colors'
-                    >
-                      <ChevronRight className='w-5 h-5' />
-                    </button>
-                  </div>
+                  <div className='flex space-x-2'></div>
                 </div>
 
                 {/* Member Name Overlay */}
@@ -262,7 +252,6 @@ export default function TeamMembers() {
                     className='text-green-600 hover:text-green-700 font-medium flex items-center group'
                   >
                     Full Profile
-                    <ChevronRight className='ml-1 w-5 h-5 group-hover:translate-x-1 transition-transform' />
                   </a>
                 </div>
               </div>
