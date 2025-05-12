@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { ChevronRight, ChevronLeft, ExternalLink } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 export default function OurWorks() {
   const [activeCategory, setActiveCategory] = useState('all');
@@ -231,13 +232,13 @@ export default function OurWorks() {
                   <span className='inline-block px-3 py-1 bg-green-100 text-green-700 rounded-full text-xs font-medium capitalize'>
                     {project.category}
                   </span>
-                  <a
-                    href='#'
-                    className='inline-flex items-center text-green-600 hover:text-green-700 font-medium transition-colors group/link'
+                  <Link
+                    className='inline-flex items-center text-green-600 hover:text-green-700 font-medium transition-colors group'
+                    to='/details'
                   >
                     View Project
                     <ExternalLink className='ml-1 w-4 h-4 group-hover/link:translate-x-1 transition-transform' />
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>

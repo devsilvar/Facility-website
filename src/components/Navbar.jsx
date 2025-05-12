@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Menu, X, Phone, Mail, Search } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -23,11 +24,9 @@ export default function Navbar() {
   };
 
   const navLinks = [
-    { name: 'Hero', href: '#hero', id: 'hero' },
-    { name: 'Team', href: '#team', id: 'team' },
-    { name: 'About', href: '#about', id: 'about' },
-    { name: 'Featured', href: '#featured', id: 'featured' },
-    { name: 'Work', href: '#work', id: 'work' },
+    { name: 'Home', href: '/', id: 'home' },
+    { name: 'Gallery', href: '/gallery', id: 'gallery' },
+    { name: 'About', href: '/about', id: 'about' },
   ];
 
   return (
@@ -82,23 +81,28 @@ export default function Navbar() {
               <div className='h-10 w-10 rounded-lg bg-gradient-to-br from-green-500 to-green-700 flex items-center justify-center text-white font-bold text-xl mr-2'>
                 {/* Monimichelle */}
               </div>
-              <div
-                className={`font-bold text-xl transition-all duration-300 ${
-                  isScrolled ? 'text-green-800' : 'text-white'
-                }`}
-              >
-                Monimichelle
-                <span className='text-green-600'> Construction LTD</span>
-              </div>
+              <Link to='/'>
+                <div
+                  className={`font-bold text-xl transition-all duration-300 ${
+                    isScrolled ? 'text-green-800' : 'text-white'
+                  }`}
+                >
+                  Monimichelle
+                  <span className='text-green-600 lg:block hidden'>
+                    {' '}
+                    Construction LTD
+                  </span>
+                </div>
+              </Link>
             </a>
           </div>
 
           {/* Desktop navigation */}
           <nav className='hidden lg:flex items-center space-x-1'>
             {navLinks.map((link) => (
-              <a
+              <Link
                 key={link.id}
-                href={link.href}
+                to={link.href}
                 onClick={() => setActiveSection(link.id)}
                 className={`px-4 py-2 rounded-md font-medium transition-all duration-200 relative ${
                   isScrolled
@@ -116,7 +120,7 @@ export default function Navbar() {
                 {activeSection === link.id && (
                   <span className='absolute bottom-0 left-1/2 transform -translate-x-1/2 w-1/2 h-0.5 bg-green-500'></span>
                 )}
-              </a>
+              </Link>
             ))}
           </nav>
 
@@ -174,9 +178,9 @@ export default function Navbar() {
 
           <div className='py-3 px-2 space-y-1'>
             {navLinks.map((link) => (
-              <a
+              <Link
                 key={link.id}
-                href={link.href}
+                to={link.href}
                 onClick={() => handleNavClick(link.id)}
                 className={`block px-4 py-3 rounded-md text-base font-medium transition-colors ${
                   activeSection === link.id
@@ -185,7 +189,7 @@ export default function Navbar() {
                 }`}
               >
                 {link.name}
-              </a>
+              </Link>
             ))}
 
             <div className='pt-4 pb-2 px-4'>
