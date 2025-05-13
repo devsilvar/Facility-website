@@ -4,7 +4,7 @@ import Navbar from './components/Navbar';
 import { Route, Routes } from 'react-router-dom';
 import Home from './pages/Home';
 import ProjectDetails from './components/ProjectDetails';
-import ScrollToTop from './components/ScrolltoTop';
+import ScrollToTop from './components/ScrollToTop';
 import ProjectGallery from './pages/WorkGallery';
 
 function App() {
