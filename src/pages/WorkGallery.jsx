@@ -153,7 +153,7 @@ const projects = [
     category: 'courts',
     description:
       'Olympic-standard swimming facility with eight competition lanes and spectator capacity of 1,500.',
-    image: '/work11.webp',
+    image: '/wor11.webp',
     year: '2017',
     photographer: 'Chioma Nwosu',
     details: 'Features advanced water filtration and heating systems.',
