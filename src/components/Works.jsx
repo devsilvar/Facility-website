@@ -161,7 +161,7 @@ export default function OurWorks() {
   };
 
   return (
-    <section className='bg-gray-50 py-16 px-4 sm:px-6 lg:px-8' id='work'>
+    <section className='bg-gray-50 py-16 px-4 sm:px-6 lg:px-8' id='projects'>
       <div className='max-w-7xl mx-auto'>
         {/* Section Header */}
         <div className='text-center mb-12'>

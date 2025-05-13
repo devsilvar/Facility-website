@@ -26,7 +26,6 @@ export default function Navbar() {
   const navLinks = [
     { name: 'Home', href: '/', id: 'home' },
     { name: 'Gallery', href: '/gallery', id: 'gallery' },
-    { name: 'About', href: '/about', id: 'about' },
   ];
 
   return (
@@ -130,7 +129,7 @@ export default function Navbar() {
               <Search className='w-5 h-5 text-gray-600' />
             </button>
             <a
-              href='#quote'
+              href='#consultation'
               className='px-5 py-2 bg-green-600 hover:bg-green-700 text-white rounded-lg font-medium transition-colors'
             >
               Get a Quote
@@ -194,7 +193,7 @@ export default function Navbar() {
 
             <div className='pt-4 pb-2 px-4'>
               <a
-                href='#quote'
+                href='#consultation'
                 onClick={() => setIsMenuOpen(false)}
                 className='block w-full text-center py-3 bg-green-600 hover:bg-green-700 text-white rounded-md font-medium transition-colors'
               >

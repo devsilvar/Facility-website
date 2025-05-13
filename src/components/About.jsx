@@ -85,13 +85,13 @@ export default function AboutUsSection() {
         {/* Enhanced Featured image slider with navigation arrows */}
 
         {/* Main content */}
-        <div className='grid md:grid-cols-1 gap-16 items-start py-20 px-6 md:px-16 bg-white'>
+        <div className='grid md:grid-cols-1 gap-16 items-start py-20 px-2 md:px-16 bg-white'>
           {/* Left: About Content */}
           <div className='space-y-6 text-center'>
             <h2 className='text-4xl md:text-5xl mb-10 font-extrabold text-gray-900 leading-tight'>
               Trusted Leaders in Sports Facility Construction
             </h2>
-            <div className='mb-20 relative overflow-hidden rounded-2xl shadow-2xl aspect-video group'>
+            <div className='mb-20 relative  overflow-hidden rounded-2xl shadow-2xl aspect-video group'>
               {images.map((src, index) => (
                 <div
                   key={index}
@@ -154,7 +154,7 @@ export default function AboutUsSection() {
               </button>
 
               {/* Enhanced slider indicators */}
-              <div className='absolute bottom-6 left-0 right-0 flex justify-center space-x-4'>
+              <div className='absolute bottom-6 left-0 right-0 flex justify-center lg:space-x-4'>
                 {images.map((_, index) => (
                   <button
                     key={index}
@@ -183,17 +183,18 @@ export default function AboutUsSection() {
               </div>
             </div>
 
-            <p className='text-lg text-gray-700 leading-relaxed mt-20'>
+            <p className='text-lg text-gray-700 font-bold leading-relaxed mt-20'>
               Monimichelle Sports Facility Construction Ltd is a premier,
-              one-stop developer of world-class sports infrastructure. With over
-              20 years of experience and partnerships with top FIFA-certified
-              firms, we turn visions into elite sports environments.
+              one-stop developer of world-class sports infrastructure.
+              <br />
+              With over 20 years of experience and partnerships with top
+              FIFA-certified firms, we turn visions into elite sports
+              environments.
             </p>
 
             <p className='text-base text-gray-600 leading-relaxed'>
               We specialize in design, construction, and maintenance of advanced
-              sports systems, including our patented hydroponic hybrid football
-              turf — a game-changer in sustainability and high-performance play.
+              sports systems{' '}
             </p>
 
             <div className='pt-6'>
@@ -205,7 +206,7 @@ export default function AboutUsSection() {
           </div>
 
           {/* Right: Stats */}
-          <div className='grid grid-cols-4 gap-6'>
+          <div className='grid lg:grid-cols-4 grid-col-12 gap-y-6  gap-6'>
             {stats.map((stat, index) => (
               <div
                 key={index}

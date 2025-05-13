@@ -270,7 +270,7 @@ export const CTA = () => {
                     </select>
                   </div>
 
-                  <div>
+                  {/* <div>
                     <label
                       htmlFor='budget'
                       className='block text-sm font-medium text-gray-700 mb-1'
@@ -293,7 +293,7 @@ export const CTA = () => {
                         </option>
                       ))}
                     </select>
-                  </div>
+                  </div> */}
 
                   <div>
                     <label

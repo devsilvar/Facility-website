@@ -134,13 +134,17 @@ export default function HeroSection() {
 
                 <div className='pt-2'>
                   <div className='flex flex-col sm:flex-row gap-4 justify-center'>
-                    <button className=' px-6 py-4 bg-emerald-500 hover:bg-emerald-600 text-white font-bold rounded-lg shadow-lg transform transition hover:-translate-y-1 hover:shadow-xl flex items-center justify-center gap-2 group'>
-                      Get Free Consultation
-                      <ArrowRight className='w-5 h-5 group-hover:translate-x-1 transition-transform' />
-                    </button>
-                    <button className='px-6 py-4 bg-white/10 backdrop-blur-sm hover:bg-white/20 text-white font-semibold rounded-lg border border-white/30 flex items-center justify-center gap-2'>
-                      View Our Projects
-                    </button>
+                    <a href='#consultation'>
+                      <button className=' px-6 py-4 bg-emerald-500 hover:bg-emerald-600 text-white font-bold rounded-lg shadow-lg transform transition hover:-translate-y-1 hover:shadow-xl flex items-center justify-center gap-2 group'>
+                        Get Free Consultation
+                        <ArrowRight className='w-5 h-5 group-hover:translate-x-1 transition-transform' />
+                      </button>
+                    </a>
+                    <a href='#projects'>
+                      <button className='px-6 py-4 bg-white/10 backdrop-blur-sm hover:bg-white/20 text-white font-semibold rounded-lg border border-white/30 flex items-center justify-center gap-2'>
+                        View Our Projects
+                      </button>
+                    </a>
                   </div>
                 </div>
 
