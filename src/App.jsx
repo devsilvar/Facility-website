@@ -10,12 +10,11 @@ import ProjectGallery from './pages/WorkGallery';
 function App() {
   return (
     <>
-      <Navbar />
       <ScrollToTop />
+      <Navbar />
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/gallery' element={<ProjectGallery />} />
-
         <Route path='/details' element={<ProjectDetails />} />
       </Routes>
       <Footer />
