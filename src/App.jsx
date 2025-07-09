@@ -84,7 +84,7 @@ function App() {
       <Footer />
 
       {/* Payment Modal - This will overlay everything */}
-      <PaymentModal />
+      {/* <PaymentModal /> */}
     </>
   );
 }
